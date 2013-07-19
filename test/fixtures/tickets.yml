@@ -9,3 +9,8 @@ two:
   name: MyString
   owner: MyString
   body: MyString
+
+three:
+  name: blown up comp
+  owner: Kris
+  body: help help!
