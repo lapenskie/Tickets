@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130718222528) do
+ActiveRecord::Schema.define(version: 20130721044803) do
 
   create_table "tickets", force: true do |t|
     t.string   "name"

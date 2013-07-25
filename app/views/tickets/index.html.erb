@@ -20,7 +20,7 @@
         <td><%= ticket.name %></td>
         <td><%= ticket.owner %></td>
         <td><%= ticket.body %></td>
-        <td><%=l ticket.created_at %></td>
+        <td><%=l ticket.created_at, format: :short %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_ticket_path(ticket), :class => 'btn btn-mini' %>

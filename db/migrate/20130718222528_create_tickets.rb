@@ -3,7 +3,7 @@ class CreateTickets < ActiveRecord::Migration
     create_table :tickets do |t|
       t.string :name
       t.string :owner
-      t.string :body
+      t.text :body
 
       t.timestamps
     end
