@@ -13,9 +13,14 @@ body {
 }
 
 .navbar .brand {
+<<<<<<< HEAD
+		margin-left: 0px;
+}
+=======
 	margin: 0px;
 }
 
+>>>>>>> users
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
