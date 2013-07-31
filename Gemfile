@@ -41,6 +41,7 @@ gem 'twitter-bootstrap-rails'
 gem 'libv8', '~> 3.11.8.3'
 gem 'less'
 gem 'less-rails'
+gem 'nokogiri'
 
 group :production do
 	gem 'pg', '0.15.1'
