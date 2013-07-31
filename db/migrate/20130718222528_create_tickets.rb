@@ -4,7 +4,6 @@ class CreateTickets < ActiveRecord::Migration
       t.string :name
       t.string :owner
       t.text :body
-
       t.timestamps
     end
   end

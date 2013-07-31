@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20130726180212) do
+ActiveRecord::Schema.define(version: 20130730204118) do
 
   create_table "tickets", force: true do |t|
     t.string   "name"
     t.string   "owner"
-    t.string   "body"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "open",       default: true
   end
 
   create_table "users", force: true do |t|
