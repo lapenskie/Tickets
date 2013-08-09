@@ -5,10 +5,7 @@ one:
   owner: MyString
   body: MyString
 
-two:
-  name: MyString
-  owner: MyString
-  body: MyString
+
 
 three:
   name: blown up comp

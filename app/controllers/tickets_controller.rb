@@ -4,7 +4,7 @@ class TicketsController < ApplicationController
   # GET /tickets
   # GET /tickets.json
   def index
-    @tickets = Ticket.order('created_at DESC').all
+    @tickets = Ticket.order('created_at DESC').all.reverse
   end
 
   # GET /tickets/1

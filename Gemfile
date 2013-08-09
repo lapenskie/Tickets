@@ -42,6 +42,7 @@ gem 'libv8', '~> 3.11.8.3'
 gem 'less'
 gem 'less-rails'
 gem 'nokogiri'
+gem 'bcrypt-ruby'
 
 group :production do
 	gem 'pg', '0.15.1'
