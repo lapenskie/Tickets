@@ -1,4 +1,6 @@
 Tickets::Application.routes.draw do
+  get "tickets/index"
+
   get "users/index"
   resources :tickets
   resources :users
@@ -7,6 +9,10 @@ Tickets::Application.routes.draw do
 
   root  'users#index'
   match '/signup', to: 'users#new', via: 'get'
+  match '/tickets', to: 'tickets#index', via:'get'
+  match '/tickets/new', to: 'tickets#new', via: 'get'
+  match '/tickets/show', to: 'tickets#show', via: 'get'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
