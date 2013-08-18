@@ -32,12 +32,14 @@
 </div>
 
 <div class="container">
-	<div class="span 3">
-		<h2>At a glance</h2>
-		<p>here is where all your shit goes</p>
-	</div>
-	<div class="span 9"><%= yield %></div>
+	<% flash.each do |key, value| %>
+		<div class="alert alert-<%= key %>"><%= value %></div>
+	<% end %>
+
+<div class="span 9"><%= yield %></div>
+	<%= debug(params) if Rails.env.development? %>
 </div>
+
 
 </body>
 </html>
