@@ -4,14 +4,17 @@ Tickets::Application.routes.draw do
   get "users/index"
   resources :tickets
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   get "users/new"
 
   root  'users#index'
-  match '/signup', to: 'users#new', via: 'get'
-  match '/tickets', to: 'tickets#index', via:'get'
-  match '/tickets/new', to: 'tickets#new', via: 'get'
-  match '/tickets/show', to: 'tickets#show', via: 'get'
+  match '/signup',       to: 'users#new',        via: 'get'
+  match '/signin',       to: 'sessions#new',     via: 'get'
+  match '/signout',      to: 'sessions#destroy', via: 'delete'
+  match '/tickets',      to: 'tickets#index',    via: 'get'
+  match '/tickets/new',  to: 'tickets#new',      via: 'get'
+  match '/tickets/show', to: 'tickets#show',     via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
